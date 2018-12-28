@@ -1,31 +1,28 @@
 body{
     font-family: 'Times New Roman', Times, serif
-    font-size: 25px;
-    /*background-color: rgb(200, 99, 37);*/
   }
   
-  h1{
+  h1, header div{
     color:white;
     text-align:center;
-    font-size: 60px;
     text-transform: uppercase;
     text-shadow: 3px 3px 5px rgb(165, 166, 172);
     font-family: Arial, Helvetica, sans-serif;
   }
   
+
   ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: rgb(48, 46, 45);
+    background-color: rgb(80, 78, 77);
   }
   
-  li {
-      float: left;
-  }
+
   
   li a{
+      float: left;
       display: block;
       color: white;
       text-align: center;
@@ -36,17 +33,13 @@ body{
   }
   
   
-  /*main {
-      background-color: rgb(200, 99, 37);
-  }*/
+
   
   .column {
-      float:left;
-      width: 47%;
-      height: 300px;
+      height: auto;
       text-align: center;
-     margin: 5px;
-     padding: 5px;
+      margin: 5px;
+      padding: 5px;
   
       box-shadow: 5px 5px 5px rgb(137, 140, 150);
       background-color: white;
@@ -71,14 +64,13 @@ body{
   }
   
   img {
-      width: 70px;
       text-align: center;
   }
   
   .technologies{
-      float:left;
-      height: 450px;
-      width: 18%;
+      /*float:left;
+        width: 18%;*/
+      height: auto;
       text-align: center;
       margin: 5px;
       padding: 3px;
@@ -87,7 +79,7 @@ body{
   }
 
 
-  /* */
+  /* Large */
   @media screen and (min-width: 768px) {
     body{
       background-color: rgb(19, 19, 83);
@@ -98,6 +90,88 @@ body{
     h2, h3{
         color: rgb(19, 19, 83);
     }
+    #small, #medium{
+        display: none;
+    }
+    h1{
+        font-size:50px;
+    }
+    h2{
+        font-size:30px;
+    }
+    h3{
+        font-size:25px;
+    }
+    p{
+        font-size:18px;
+    }
+    li{
+        font-size:20px;
+    }
+    img {
+        width: 70px;
+    }
+
+    li a{
+    float: left;
+    }
+    .column {
+    float:left;
+    width: 47%;
+    }
+    .technologies{
+        float:left;
+        width: 18%;
+    }
+}
+
+/*Medium*/
+@media screen and (max-width: 768px) and (min-width: 300px){
+    body{
+      background-color: rgb(20, 71, 28);
+    }
+    li a:hover {
+        background-color: rgb(20, 71, 28);
+    }
+    h2, h3{
+        color: rgb(20, 71, 28);
+    }
+    #small, #large{
+        display: none;
+    }
+    h1{
+        font-size:40px;
+    }
+    h2{
+        font-size:25px;
+    }
+    h3{
+        font-size:20px;
+    }
+    p{
+        font-size:15px;
+    }
+    li{
+        font-size:18px;
+    }
+    img {
+        width: 60px;
+    }
+    li a{
+        float: none;
+        width:100%;
+      }
+     .column {
+        float: none;
+        width: 94%;
+      }
+      .technologies{
+        float:left;
+        width: 44%;
+      }
+  }
+
+  /*Small*/
   @media screen and (max-width: 300px) {
     body{
           background-color: rgb(139, 17, 17);
@@ -108,13 +182,38 @@ body{
     h2, h3{
         color: rgb(139, 17, 17);
     }
-  @media screen and (max-width: 768px) and (min-width: 300px){
-    body{
-      background-color: rgb(20, 71, 28);
+    #large, #medium{
+        display: none;
     }
-    li a:hover {
-        background-color: rgb(20, 71, 28);
+    h1{
+        font-size:30px;
     }
-    h2, h3{
-        color: rgb(20, 71, 28);
+    h2{
+        font-size:20px;
     }
+    h3{
+        font-size:15px;
+    }
+    p{
+        font-size:10px;
+    }
+    li{
+        font-size:13px;
+    }
+    img {
+        width: 40px;
+    }
+    li a{
+        float: none;
+        width:100%;
+      }
+    .column {
+        float: none;
+        width: 94%;
+      }
+      .technologies{
+        float:none;
+        width: 94%;
+      }
+  }
+ 
